@@ -1,6 +1,6 @@
-import Sidebar from "./components/Sidebar.jsx";
+import SideBar from "./components/SideBar.jsx";
 import Feed from "./components/Feed.jsx";
-import Rightbar from "./components/Rightbar.jsx";
+import RightBar from "./components/RightBar.jsx";
 import { Box, createTheme, Stack, ThemeProvider } from "@mui/material";
 import NavBar from "./components/NavBar.jsx";
 import Add from "./components/Add";
@@ -19,9 +19,9 @@ function App() {
       <Box bgcolor={"background.default"} color={"text.primary"}>
         <NavBar />
         <Stack direction="row" spacing={2} justifyContent="space-between">
-          <Sidebar setMode={setMode} mode={mode}/>
+          <SideBar setMode={setMode} mode={mode}/>
           <Feed />
-          <Rightbar />
+          <RightBar />
         </Stack>
         <Add />
       </Box>
